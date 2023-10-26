@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+
+section {
+    text-align: center;
+}
+
+.what_chocozap_container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.what_chocozap {
+    display: inline;
+    padding: 16px;
+    font-size: 40px;
+    font-weight: 600px;
+    background-color: #FCEE4F;
+    color: #333;
+}
+
+.what_chocozap_description {  
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+

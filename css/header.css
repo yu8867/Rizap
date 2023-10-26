@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+.video-section video {
+    width: 100%;
+    height: 80vh; /* 画面の高さに合わせる */
+    object-fit: cover; /* サイズを維持し、余白をカット */
+}
+
+.cp_navi {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333; /* ナビゲーションメニューの背景色 */
+    color: #fff; /* ナビゲーションメニューのテキスト色 */
+    padding: 8px;
+    z-index: 999;
+}
+
+.cp_navi ul > li > a {
+    display: flex;
+}
+
+.cp_navi ul > li > a > img {
+    width: 120px;
+    pointer-events: none;
+    margin-top: 20px;
+}
+
+/* ナビゲーションメニューのリンクスタイル */
+.cp_navi a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px; /* リンク間のスペースを追加 */
+}
+
+.cp_navi {
+	background-color: #ffffff;
+	border: 1px solid #dedede;
+	border-radius: 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	color: #888888;
+	display: block;
+	/* margin: 1em 1%; */
+	overflow: hidden;
+	width: 100%;
+    height: 10%
+}
+.cp_navi ul {
+	margin: 0;
+	padding: 0;
+    display: flex;
+    align-items: center;
+}
+.cp_navi ul li {
+	display: inline-block;
+	list-style-type: none;
+	-webkit-transition: all 0.2s;
+	        transition: all 0.2s;
+}
+.cp_navi > ul > li > a {
+	/* color: #aaaaaa; */
+    color: black;
+	display: block;
+	line-height: 56px;
+	padding: 0 10px;
+	text-decoration: none;
+}
+.cp_navi > ul > li:hover {
+	background-color: rgb(218, 60, 65);
+}
+.cp_navi > ul > li:hover > a {
+	color: rgb( 255, 255, 255 );
+}
+.cp_navi > ul > li:hover > a > .caret {
+	border-top-color: rgb( 255, 255, 255 );
+}
+.cp_navi > ul > li > div {
+	background-color: rgb(218, 60, 65);
+	border-top: 0;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	display: none;
+	margin: 0;
+	opacity: 0;
+	position: absolute;
+	width: 165px;
+	visibility: hidden;
+	-webkit-transiton: opacity 0.2s;
+	       transition: opacity 0.2s;
+}
+.cp_navi > ul > li:hover > div {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+.cp_navi > ul > li > div ul > li {
+	display: block;
+}
+.cp_navi > ul > li > div ul > li > a {
+	color: #ffffff;
+    /* color: black; */
+	display: block;
+	padding: 12px 24px;
+	text-decoration: none;
+}
+.cp_navi > ul > li > div ul > li:hover > a {
+	background-color: rgba( 255, 255, 255, 0.1);
+}
